@@ -1,0 +1,189 @@
+
+
+.my-checkbox-inline {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
+/* ///////////////////////////////// */
+.topPanel {
+  background-color: rgb(150, 222, 235);
+  padding: 15px;
+  margin: -10px;
+}
+
+.contentContainer{
+  min-width: 350px;
+  padding: 10px;
+  margin: 0 auto;
+  width: 50%;
+  border: 1px solid rgb(150, 222, 235);
+  border-radius: 5px;
+}
+
+
+.audio {
+  padding: 0;
+  margin: 20px auto;
+  width: 300px;
+  display: block;
+}
+.left{
+  padding: 0;
+  margin: 20px;
+  display: inline-block;
+  font-weight: 700;
+  width: 27%;
+  text-align: right;
+  vertical-align: top;
+  color: rgb(80, 76, 76);
+}
+.right{
+  text-align: left;
+  width: 65%;
+  padding: 5px 0 0 0;
+  margin: 3px;
+  display: inline-block;
+  vertical-align: top;
+  color: rgb(130, 126, 126);
+}
+/* label hover title */
+.hoverTitle{
+  display: none;
+  padding: 5px;
+  margin: -38px 0 0 -40px;
+  position: absolute;
+  border-radius: 4px;
+  color: white;
+  background-color: black;
+  font-size: 12px;
+  min-width: 100px;
+  text-align: center;
+}
+.hover2 {
+  padding: 5px;
+  margin: -58px 0 0 -5px;
+}
+.hover3 {
+  padding: 5px;
+  margin: -58px 0 0 30px;
+}
+.hover4 {
+  padding: 5px;
+  margin: -58px 0 0 60px;
+}
+.hover5 {
+  padding: 5px;
+  margin: -58px 0 0 95px;
+}
+
+.radio-inline:hover .hoverTitle{
+    display: block;
+}
+.hoverTitle::after, .hoverTitle::before {
+  content: '';
+  position: absolute;
+  background: black;
+  left: 45px; bottom: -7px;
+  width: 15px; height: 15px;
+  z-index: -1; /* Прячем за основным блоком */
+  transform: rotate(45deg); /* Поворачиваем на 45º */
+  -webkit-transform: rotate(45deg);
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////// */
+.notTrue {
+  padding: 10px 0 0 0;
+}
+.typeError {
+  margin: 10px 0;
+}
+.rightInput {
+  padding: 10px;
+  width: 90%;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+}
+.toRight {
+  text-align: right;
+  padding: 0 5% 0 0;
+}
+.colorLastCheck {
+  color: rgb(80, 76, 76);
+  font-weight: bold;
+  font-size: 15px;
+}
+.text-center {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.submitButton {
+  padding: 8px 12px;
+  width: 100px;
+  margin: 20px auto;
+  border-radius: 5px;
+  background-color: rgb(17, 99, 186);
+  color: white;
+  border: none;
+  outline: none;
+}
+.submitButton:hover {
+  background-color: rgb(12, 71, 135);
+}
+.submitButton:active {
+  background-color: rgb(20, 60, 102);
+  color: rgb(237, 233, 233);
+}
+
+ @media (max-width: 1200px) {
+  .contentContainer{
+    padding: 10px;
+    margin: 0 auto;
+    width: 70%;
+    border: 1px solid rgb(150, 222, 235);
+    border-radius: 5px;
+  }
+} 
+  @media (max-width: 900px) {
+  .contentContainer{
+    padding: 10px;
+    margin: 0 auto;
+    width: 90%;
+    border: 1px solid rgb(150, 222, 235);
+    border-radius: 5px;
+  }
+} 
+  @media (max-width: 700px) {
+  .contentContainer{
+    padding: 10px;
+    margin: 0 auto;
+    width: 95%;
+    border: 1px solid rgb(150, 222, 235);
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  .right{
+    width: 50%;
+  }
+  .toRight{
+    padding: 0 25% 0 0;
+  }
+} 
